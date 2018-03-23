@@ -38,7 +38,12 @@
             <file regex="\.(htm|html|js|css|json)$" />
         </include>
         <exclude>
-        </exclude>
+		<file regex="augmented-reality/world\.html$"/>
+		<file regex="augmented-reality/world\.css"/>
+		<file regex="augmented-reality/js/points-of-location\.js$"/>
+		<file regex="augmented-reality/js/marker\.js$"/>
+		<file regex="augmented-reality/js/jquery-1.9.1.min\.js$"/>
+    	</exclude>
     </cryptfiles>
 
     <hook type="after_prepare" src="hooks/after_prepare.js" />
